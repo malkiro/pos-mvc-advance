@@ -117,7 +117,12 @@ public class Layout extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCustomer1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCustomer1ActionPerformed
-
+panel.removeAll();
+        ItemPanel cp = new ItemPanel();
+        cp.setSize(panel.getWidth(), panel.getHeight());
+        panel.add(cp);
+        panel.revalidate();
+        panel.repaint();
     }//GEN-LAST:event_btnCustomer1ActionPerformed
 
     private void btnCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCustomerActionPerformed
