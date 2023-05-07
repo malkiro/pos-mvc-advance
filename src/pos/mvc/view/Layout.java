@@ -135,7 +135,12 @@ panel.removeAll();
     }//GEN-LAST:event_btnCustomerActionPerformed
 
     private void btnOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrderActionPerformed
-
+panel.removeAll();
+        OrderPanel cp = new OrderPanel();
+        cp.setSize(panel.getWidth(), panel.getHeight());
+        panel.add(cp);
+        panel.revalidate();
+        panel.repaint();
     }//GEN-LAST:event_btnOrderActionPerformed
 
     /**
